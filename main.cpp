@@ -1,8 +1,15 @@
 #include <iostream>
+#include "Case.h"
+#include "Board.h"
 
 int main() {
 
-    std::cout << "COUCOU" << std::endl;
+int size;
+    std::cin >> size;
+
+    Board board(size);
+
+    board.printMyBoard();
 
     return 0;
 }
